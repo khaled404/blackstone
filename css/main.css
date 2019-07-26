@@ -870,6 +870,7 @@ body {
 /*start faci*/
 .faci {
   padding: 170px 0 146px;
+  overflow: hidden;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(55%, #f68545), to(transparent)), url("../images/faci.jpg");
   background-image: linear-gradient(to right, #f68545 55%, transparent), url("../images/faci.jpg");
   background-repeat: no-repeat;
