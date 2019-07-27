@@ -886,6 +886,10 @@ body {
       background-image: linear-gradient(to right, #f68545 73%, transparent), url("../images/faci.jpg"); } }
   @media (max-width: 425px) {
     .faci {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f68545));
+      background-image: linear-gradient(#f68545); } }
+  @media (max-width: 425px) {
+    .faci {
       background-size: cover; } }
   .faci .faci-content {
     margin-right: auto;
@@ -940,6 +944,9 @@ body {
     left: 0;
     width: auto;
     height: auto; }
+    @media (max-width: 425px) {
+      .faci .pattern {
+        left: -126px; } }
 
 /*start client*/
 .client {

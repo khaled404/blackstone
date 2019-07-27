@@ -56,7 +56,13 @@ $(function(){
             $('.sup-link').stop().slideToggle();
         });
     }
-
+    var a = 0;
+    $(window).on("scroll",function(){
+        if (a==0 && $(this).scrollTop() >= $(".about-section").offset().top - 200) {
+            $('.timer').countTo();
+            a++
+        }
+    });
     $('.owl-carousel').owlCarousel({
         autoplay: false,
         rtl:true,
