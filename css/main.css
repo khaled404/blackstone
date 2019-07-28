@@ -183,6 +183,9 @@ body {
     -webkit-clip-path: polygon(0 0%, 0% 100%, 110% 100%);
             clip-path: polygon(0 0%, 0% 100%, 110% 100%);
     z-index: 5; }
+  @media (max-width: 425px) {
+    .main-header .logo-box img {
+      height: 80px; } }
   .main-header .search-overlay {
     position: fixed;
     width: 100%;
@@ -250,14 +253,14 @@ body {
       opacity: 1;
       visibility: visible; }
     .main-header .search-overlay .collaps {
-      height: 16px;
+      height: 30px;
       width: 24px;
       cursor: pointer;
       margin: 0 30px;
       z-index: 999;
       position: absolute;
       top: 10%;
-      left: 0; }
+      left: 5%; }
       .main-header .search-overlay .collaps span {
         background-color: #fff;
         display: block;
@@ -296,14 +299,14 @@ body {
       opacity: 1;
       visibility: visible; }
     .main-header .nav-overlay .collaps {
-      height: 16px;
+      height: 30px;
       width: 24px;
       cursor: pointer;
       margin: 0 30px;
       z-index: 999;
       position: absolute;
       top: 10%;
-      left: 0; }
+      left: 5%; }
       .main-header .nav-overlay .collaps span {
         background-color: #fff;
         display: block;
@@ -452,7 +455,6 @@ body {
               align-items: center; }
       .main-header nav .main-nav .search-box {
         margin-right: auto;
-        margin-top: 8px;
         cursor: pointer; }
         .main-header nav .main-nav .search-box img {
           -webkit-filter: brightness(0) invert(1);
@@ -463,8 +465,7 @@ body {
             -webkit-filter: brightness(1) invert(0);
                     filter: brightness(1) invert(0); }
       .main-header nav .main-nav .lang {
-        font-size: 16px;
-        margin-top: 10px; }
+        font-size: 16px; }
         .main-header nav .main-nav .lang a {
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
@@ -475,7 +476,6 @@ body {
         .main-header nav .main-nav .lang:hover a {
           color: #f68545; }
       .main-header nav .main-nav .collaps {
-        height: 16px;
         width: 24px;
         cursor: pointer;
         margin: 0 30px;
@@ -542,7 +542,8 @@ body {
     color: #7d7d7d;
     font-family: "GESS-LIGHT";
     margin-bottom: 24px;
-    padding-left: 40px; }
+    padding-left: 40px;
+    line-height: 1.765; }
     @media (max-width: 991px) {
       .about-section .about-content p {
         padding-left: 0; } }
@@ -605,6 +606,7 @@ body {
   background-image: linear-gradient(rgba(38, 38, 38, 0.749)), url("../images/services.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   position: relative; }
   @media (max-width: 991px) {
     .services {
@@ -911,7 +913,9 @@ body {
   .faci p {
     font-family: "GESS-LIGHT";
     font-size: 17px;
-    color: white; }
+    color: white;
+    z-index: 2;
+    line-height: 1.765; }
   .faci::before {
     content: '';
     position: absolute;
@@ -943,7 +947,8 @@ body {
     top: -20px;
     left: 0;
     width: auto;
-    height: auto; }
+    height: auto;
+    z-index: 1; }
     @media (max-width: 425px) {
       .faci .pattern {
         left: -126px; } }
@@ -970,7 +975,8 @@ body {
       font-size: 17px;
       font-family: "GESS-LIGHT";
       color: #686868;
-      margin-bottom: 44px; }
+      margin-bottom: 44px;
+      line-height: 1.765; }
       @media (max-width: 991px) {
         .client .client-content p {
           margin-bottom: 14px; } }
@@ -1129,7 +1135,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    border-left: 1px solid #2b2b2b; }
+    border-left: 1px solid #2b2b2b;
+    z-index: 2; }
     @media (max-width: 425px) {
       .main-footer .right {
         border-left: none; } }
@@ -1159,6 +1166,7 @@ body {
       .main-footer .right p span {
         display: block; }
   .main-footer .center {
+    z-index: 2;
     text-align: center; }
     @media (max-width: 425px) {
       .main-footer .center {
@@ -1235,6 +1243,7 @@ body {
   .main-footer .left {
     text-align: center;
     border-right: 1px solid #2b2b2b;
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1256,12 +1265,13 @@ body {
       font-size: 18px;
       color: white;
       margin-bottom: 25px; }
-    .main-footer .left p {
+    .main-footer .left p a {
       font-size: 16px;
       color: #8b8a8a;
-      font-family: "MontserratRegular"; }
-      .main-footer .left p span {
-        display: block; }
+      font-family: "MontserratRegular";
+      text-decoration: none; }
+    .main-footer .left p span {
+      display: block; }
   .main-footer .pattern {
     position: absolute;
     bottom: 0;
